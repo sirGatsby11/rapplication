@@ -37,3 +37,25 @@ T -> id:                       |              |
 T -> num:                     id               c
 
 
+E.node  = new node ('+' E.node)
+E.node  = new node ('-' E.node)
+E.node = T.node 
+T.node = new leaf 
+T.node = new bay (num,!) // check symbols
+
+
+
+
+P1 = newbay (id, a)
+P2 = newbay (id, b)
+P3 = newbay (-, P, P2)
+P4 = newbay (id, c)
+P5 = new node (+, !) // check symbols 
+
+
+
+      | + |  |  |
+        /        \
+    |-| | |   |id | c |
+  |id | a |     | id | b |      
+   
